@@ -1,0 +1,34 @@
+div{
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+}
+.btn{
+  background-image: linear-gradient(135deg,aqua,rgba(12, 232, 12, 0.783));
+  border-radius: 6px;
+  box-sizing: border-box;
+  color: #ffff;
+  height: 50px;
+  width: 7em;
+  display: block;
+  font-size: 1.4em;
+  font-weight: 600;
+  padding: 4px;
+  position: relative;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.btn .btnspan{
+  align-items: center;
+  background: black;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease-in-out;
+
+}
+.btn:hover .btnspan{
+  background: transparent;
+}
