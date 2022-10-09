@@ -1,0 +1,19 @@
+.btn{
+    background-color: aquamarine;
+    border: 2px solid black;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 50px;
+    box-shadow: black 4px 4px 0 0;
+    cursor: pointer;
+    width: 100px;
+}
+.btn:hover{
+    background-color: aqua;
+
+}
+.btn:active{
+    box-shadow: black 0px 0px 0 0;
+    transform: translate(2px,2px);
+}
