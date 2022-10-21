@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+h2{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+    background-image: linear-gradient(to right, #501e9c 0%, #8169f1 20%, #8169f1 30%, #a44cee 50%,
+     #ff847f 100%);
+    display: inline-block;
+    margin-top: -5px;
+    color: inherit;
+    text-decoration: none ;
+    font-size: 29px;
+}
+
+ul li {
+    list-style: none;
+    margin: 5px 20px;
+    padding: 10px;
+    font-size: larger;
+}
+li:hover{
+    border-radius: 50px;
+    background: rgb(75, 143, 253);
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+}
+.name{
+    position: absolute;
+    top: 34px;
+    left: 80px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: black;
+}
+
+.humburger-menu i {
+    font-size: 50px;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+
+
+@media (max-width : 768px) {
+    .mobile-nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 30px;
+        background-color: black;
+    }
+
+    .humburger-menu{
+      margin-top: 15px;
+      font-size: large;
+    }
+
+    .img{
+      margin-left: -9px;
+    }
+    
+    .mobile-name{
+        position: absolute;
+        left: 80px;
+        top: 35px;
+    }
+
+    li:hover{
+        border-radius: 50px;
+        background: rgb(75, 143, 253);
+    }
+    
+
+    h2{
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;   
+        background-image: linear-gradient(to right, #501e9c 0%, #8169f1 20%, #8169f1 30%, #a44cee 50%,
+         #ff847f 100%);
+        display: inline-block;
+        color: inherit;
+        font-size: 33px;
+        margin-top: 8px;
+        margin-left: 17px;
+        text-decoration: none ;
+    }
+    
+
+    .navbar {
+        display: block;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        top: 128px;
+        transition: all ease-in-out 0.5s;
+        overflow-x: hidden;
+    }
+
+    .d-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navlink {
+        margin-top: 20px;
+    }
+
+    .navlink ul li {
+        margin: 30px 0;
+        font-size: 23 px;
+    }
+    .logo{
+        display: none;
+    }
+}

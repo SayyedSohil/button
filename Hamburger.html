@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../CSS/Hamburger.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" />
+</head>
+
+<body>
+  <div class="main-nav">
+    <div class="navbar" id="navbar">
+      <div class="logo">
+        <div class="logo1">
+          <img src="../img/coding-7224945__340.png" alt="" height="50px">
+        </div>
+        <div>
+          <h2 class="name">Turbo_Code</h2>
+        </div>
+      </div>
+      <nav class="navlink" id="nav">
+        <ul class="d-flex">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Service</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="mobile-nav">
+      <div class="mobile-logo">
+      <div class="img">
+        <img src="../img/coding-7224945__340.png" alt="" height="80px">
+      </div>
+        <h2 class="mobile-name">Turbo_Code</h2>
+      </div>
+      <div class="humburger-menu" id="menu-open">
+        <i class="fa-solid fa-bars" id="bar"></i>
+        <i style="display: none;" class="fa-regular fa-x" id="xx"></i>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let menu_open = document.getElementById('menu-open');
+    let navbar = document.getElementById('navbar');
+    let navlink = document.getElementById('nav');
+    navbar.style.right = '-800px';
+    navbar.style.top = '123px';
+    menu_open.onclick = () => {
+      if (navbar.style.right == '-800px') {
+        navbar.style.right = '0px';
+        document.getElementById('bar').style.display = 'none';
+        document.getElementById('xx').style.display = 'block';
+      } else if (navbar.style.right = '0px') {
+        navbar.style.right = '-800px';
+        document.getElementById('bar').style.display = 'block';
+        document.getElementById('xx').style.display = 'none';
+      }
+    }
+  </script>
+</body>
+
+</html>
